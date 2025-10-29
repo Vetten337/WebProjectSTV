@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!--  
+Scott Vetten
+09.12.2025
+ -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Freckle+Face:wght@400;700&family=Metal+Mania&display=swap" rel="stylesheet">
+  <title>Dead By Daylight Fan Page - Contact</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+</head>
+<body>
+
+  <!-- Topbar: Sticky nav and logo -->
+  <header class="topbar">
+    <div class="logo-container">
+      <a href="index.html">
+        <img src="images/dbd-logo.jpg" alt="Dead by Daylight logo" class="hero-logo">
+      </a>
+      <h1 class="logo-text">Dead by Daylight Fan Page</h1>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="character-guides.html">Character Guides</a></li>
+        <li><a href="maps.html">Maps</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <!-- Hero Section -->
+  <section class="hero-text">
+    <h2>Contact & Information</h2>
+    <p>Have questions or want to reach out? Heres how you can contact me and find Weatherford College.</p>
+  </section>
+
+  <!-- Main Content -->
+  <main class="content">
+
+    <section class="card">
+      <h2>About This Site</h2>
+      <p>This website was created as a class project for ITSE.1311.501.2025FA to learn the basics of HTML and website design.</p>
+      <p>You can contact me via the student email link located at the bottom of the page.</p>
+    </section>
+
+ <!-- college information -->
+    <section class="card">
+      <h2>Weatherford College</h2>
+      <p>225 College Park Drive<br>
+      Weatherford, TX 76086<br>
+      <p class="tel-link">
+		<a href="tel:1234567890">Call Us: 123-456-7890</a></p>
+	    
+<!-- google map -->
+      <aside style="text-align:center; margin-top:1rem;">
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4050.701035130142!2d-97.7951505238087!3d32.74129638580981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8651fdfb8ac942b5%3A0xa6afccce1d14c43d!2sWeatherford%20College!5e1!3m2!1sen!2sus!4v1758237539765!5m2!1sen!2sus"
+    width="600"
+    height="450"
+    style="border:0; width:100%;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+    class="map">
+  </iframe>
+</aside>
+    </section>
+
+ <!-- web form -->
+  <section class="card contact-form-section">
+  <h2>Contact Form</h2>
+  <p>Use the form below to reach out with questions or feedback</p>
+
+    <fieldset>
+      <legend>Personal Information</legend>
+
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required placeholder="Your name">
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required placeholder="example@email.com">
+
+      <label for="role">Your Role:</label>
+      <select id="role" name="role">
+        <option value="survivor">Survivor Main</option>
+        <option value="killer">Killer Main</option>
+        <option value="both">Both</option>
+        <option value="new">New Player</option>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <legend>Message Details</legend>
+
+      <label for="subject">Subject:</label>
+      <input type="text" id="subject" name="subject" placeholder="Subject of your message">
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" placeholder="Write your message here..."></textarea>
+
+      <label for="subscribe">
+        <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+        Subscribe to newsletter
+      </label>
+
+      <button type="submit" class="submit-btn">Send Message</button>
+    </fieldset>
+</section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Scott (T0xx). Fan site for educational purposes.</p>
+    <p>
+      <a href="https://deadbydaylight.com/" target="_blank">Dead by Daylight Official Page</a> | 
+      <a href="mailto:svetten.8275@wcstudents.wc.edu">Student Email</a>
+    </p>
+  </footer>
+
+</body>
+</html>
