@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!--  
+Scott Vetten
+11.07.2025
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Freckle+Face:wght@400;700&family=Metal+Mania&display=swap" rel="stylesheet">
+  <title>Dead By Daylight Fan Page - Art Gallery</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+</head>
+<body class="gallery-page">
+
+  <!-- Topbar: Sticky nav and logo -->
+  <header class="topbar">
+    <div class="logo-container">
+      <a href="index.html">
+        <img src="images/dbd-logo.jpg" alt="Dead by Daylight logo" class="hero-logo">
+      </a>
+      <h1 class="logo-text">Dead by Daylight Fan Page</h1>
+    </div>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="character-guides.html">Character Guides</a></li>
+      <li><a href="maps.html">Maps</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="content">
+
+  <!-- Hero Section -->
+  <section class="hero-text">
+    <h2>Fan Art Gallery: Killers & Survivors</h2>
+    <p>Explore some of the iconic characters in Dead by Daylight through fan art!</p>
+  </section>
+
+  <!-- Gallery Grid Section -->
+  <section class="gallery-grid">  <!-- getting a validation warning here wanting me to use a div instead of section because im not using a heading. if i change to div, the heading changes my spacing and throws off the grid -->
+    <!-- figure classes for characters -->
+    <figure class="gallery-item">
+      <img src="images/myers.png" alt="Michael Myers" class="gallery-image">
+      <figcaption>Michael Myers: Master of stalking and terror in the Fog.</figcaption>
+    </figure>
+
+    <figure class="gallery-item">
+      <img src="images/meg.png" alt="Meg Thomas" class="gallery-image">
+      <figcaption>Meg Thomas: Agile survivor, excels at quick escapes and looping killers.</figcaption>
+    </figure>
+
+    <figure class="gallery-item featured">
+      <img src="images/trapper.png" alt="The Trapper" class="gallery-image">
+      <figcaption>The Trapper: Known for setting bear traps to catch survivors.</figcaption>
+    </figure>
+
+  </section>
+
+  <!-- perk table -->
+  <section class="perk-table-section desktop-content">
+    <h2>Survivor Perk Loadouts</h2>
+    <table>
+      <caption>Popular Survivor Builds</caption>
+      <tr>
+        <th>Survivor</th>
+        <th>Perk 1</th>
+        <th>Perk 2</th>
+        <th>Perk 3</th>
+        <th>Perk 4</th>
+      </tr>
+      <tr>
+        <td>Meg Thomas</td>
+        <td>Adrenaline</td>
+        <td>Quick & Quiet</td>
+        <td>Sprint Burst</td>
+        <td>Resilience</td>
+      </tr>
+      <tr>
+        <td>Dwight Fairfield</td>
+        <td>Bond</td>
+        <td>Leader</td>
+        <td>Prove Thyself</td>
+        <td>Borrowed Time</td>
+      </tr>
+      <tr>
+        <td>Claudette Morel</td>
+        <td>Empathy</td>
+        <td>Botany Knowledge</td>
+        <td>Self-Care</td>
+        <td>We'll Make It</td>
+      </tr>
+      <tr>
+        <td>Jake Park</td>
+        <td>Iron Will</td>
+        <td>Calm Spirit</td>
+        <td>Saboteur</td>
+        <td>Dead Hard</td>
+      </tr>
+      <tr>
+        <td>Nea Karlsson</td>
+        <td>Urban Evasion</td>
+        <td>Balanced Landing</td>
+        <td>Dance With Me</td>
+        <td>Windows of Opportunity</td>
+      </tr>
+      <tr>
+        <td>Kate Denson</td>
+        <td>Boil Over</td>
+        <td>Windows of Opportunity</td>
+        <td>Kindred</td>
+        <td>Empathic Connection</td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- turns the perk table into a list for mobile -->
+  <section class="perk-list mobile-content">
+    <h2>Survivor Perk Loadouts</h2>
+    <ul>
+      <li><strong>Meg Thomas:</strong> Adrenaline, Quick & Quiet, Sprint Burst, Resilience</li>
+      <li><strong>Dwight Fairfield:</strong> Bond, Leader, Prove Thyself, Borrowed Time</li>
+      <li><strong>Claudette Morel:</strong> Empathy, Botany Knowledge, Self-Care, We'll Make It</li>
+      <li><strong>Jake Park:</strong> Iron Will, Calm Spirit, Saboteur, Dead Hard</li>
+      <li><strong>Nea Karlsson:</strong> Urban Evasion, Balanced Landing, Dance With Me, Windows of Opportunity</li>
+      <li><strong>Kate Denson:</strong> Boil Over, Windows of Opportunity, Kindred, Empathic Connection</li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2025 Scott (T0xx). Fan page for educational purposes.</p>
+</footer>
+
+<script src="scripts/script.js"></script>
+
+</body>
+</html>

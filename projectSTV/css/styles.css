@@ -419,11 +419,23 @@ footer a:hover {
 
 }
 
+/* Show hamburger on mobile & tablet */
+.mobile-nav {
+  display: block;
+  cursor: pointer;
+  color: #fff;
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+
 
 /* Desktop  (1024px–1439px) */
 @media (min-width: 1024px) {
   .hero-logo {
     max-width: 500px;
+  }
+  .mobile-nav {
+    display: none;
   }
 
   .logo-text {
@@ -476,6 +488,10 @@ footer a:hover {
 @media (min-width: 1440px) {
   .hero-logo {
     max-width: 600px;
+  }
+
+  .mobile-nav {
+   display: none;
   }
 
   .logo-text {
@@ -557,6 +573,17 @@ footer a:hover {
 
 /* Hide and show content depending on screen size */
 
+/* Hide topbar nav on mobile */
+@media (max-width: 1023px) {
+  .desktop-content {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+  }
+}
+
 /* mobile */
 .mobile-content {
   display: block;
@@ -574,6 +601,10 @@ footer a:hover {
 
   .desktop-content {
     display: block;
+  }
+
+ .mobile-nav {
+ display: none;
   }
 }
 
@@ -602,4 +633,35 @@ footer a:hover {
   .gallery-grid {
     grid-template-columns: repeat(3, 1fr);
   }
+}
+
+/* keyframes for flicker animation */
+@keyframes flicker {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    opacity: 1;
+  }
+  20%, 24%, 55% {
+    opacity: 0.4;
+  }
+}
+/* flicker animation */
+.hero-text h2, h1 {
+  animation: flicker 4s infinite;
+}
+
+/* keyframes for fade in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* fade animation */
+.card, .gallery-grid, .hero-logo{
+  animation: fadeIn 0.8s ease-out forwards;
 }

@@ -416,7 +416,9 @@ footer a:hover {
     max-width: 600px;
     margin: 0 auto;
   }
+
 }
+
 
 /* Desktop  (1024px–1439px) */
 @media (min-width: 1024px) {
@@ -492,6 +494,64 @@ footer a:hover {
   .map {
     width: 600px;
     height: 600px;
+  }
+}
+
+/* Mobile Perk List Styles - Always apply to small screens */
+.perk-list.mobile-content {
+  display: block; /* visible on mobile by default */
+  background-color: #111;
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+  font-family: 'Metal Mania', sans-serif;
+  color: #ddd;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.perk-list.mobile-content h2 {
+  text-align: center;
+  color: #c62828;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.perk-list.mobile-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.perk-list.mobile-content ul li {
+  background-color: #1a1a1a;
+  margin-bottom: 0.5rem;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  border: 1px solid #222;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.perk-list.mobile-content ul li:hover {
+  background-color: #2a2a2a;
+  transform: scale(1.01);
+}
+
+.perk-list.mobile-content ul li strong {
+  color: #c62828;
+}
+
+/* Hide mobile perks on larger screens */
+@media (min-width: 1024px) {
+  .perk-list.mobile-content {
+    display: none;
+  }
+}
+
+
+/* Hide mobile perks on larger screens */
+@media (min-width: 1024px) {
+  .perk-list.mobile-content {
+    display: none;
   }
 }
 

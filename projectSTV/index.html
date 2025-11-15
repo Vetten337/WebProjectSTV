@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--  
 Scott Vetten
-11.07.2025
+11.14.2025
  -->
 <html lang="en">
 <head>
@@ -25,7 +25,21 @@ Scott Vetten
       <h1 class="logo-text">Dead by Daylight Fan Page</h1>
     </div>
 
-    <nav>
+  <!-- Mobile Nav -->
+  <nav class="mobile-nav mobile-content">
+    <a class="menu-icon" onclick="hamburger()">&#9776;</a>
+
+  <div id="menu-links">
+    <a href="index.html">Home</a>
+    <a href="character-guides.html">Character Guides</a>
+    <a href="maps.html">Maps</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<!-- Desktop Nav -->
+    <nav class="desktop-content">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="character-guides.html">Character Guides</a></li>
@@ -69,7 +83,7 @@ Scott Vetten
   </aside>
 
   <audio controls>
-				<source src="media/audio-happy.mp3" type="audio/mp3">
+				<source src="media/DBD.mp3" type="audio/mp3">
 				<source src="media/audio-happy.ogg" type="audio/ogg">
 				<p>Your browser does not support the audio element.</p>
 			</audio>
@@ -82,6 +96,8 @@ Scott Vetten
       <a href="mailto:svetten.8275@wcstudents.wc.edu">Student Email</a>
     </p>
   </footer>
+
+<script src="scripts/script.js"></script>
 
 </body>
 </html>
