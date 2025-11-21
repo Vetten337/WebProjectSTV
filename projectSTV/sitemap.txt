@@ -1,0 +1,5 @@
+http://www.exampledomain.com/index.html
+http://www.exampledomain.com/character-guides.html
+http://www.exampledomain.com/gallery.html
+http://www.exampledomain.com/maps.html
+http://www.exampledomain.com/contact.html

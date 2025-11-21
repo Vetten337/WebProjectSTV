@@ -665,3 +665,11 @@ footer a:hover {
 .card, .gallery-grid, .hero-logo{
   animation: fadeIn 0.8s ease-out forwards;
 }
+
+
+/* .social auto centered on all viewports, no need to modify
+
+  .social {
+}
+
+*/
